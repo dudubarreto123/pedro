@@ -1,0 +1,64 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+main h1{
+     text-align: center; /*alinhar o texto no centro*/
+     font-family:Verdana, Geneva, Tahoma, sans-serif;
+     font-size: 60px;
+}
+.wrapper{
+    height: 100vh;
+    overflow-x:hidden;
+    perspective: 4px;
+    transform-style: preserve-3d;
+}
+.secao {
+    margin: 100px;
+    position: relative;
+    height: 80vh;
+    min-height: 100px;
+    transform-style: inherit;
+    padding-bottom: 100px;
+}
+
+.secao::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right:0;
+    bottom: 0;
+    z-index: -10;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transform: translatez(-0.5px) scale(1.0);
+}
+.conteudo {
+    position:absolute;
+    top:70%;
+    width: 80%;
+    padding: 20px 10px;
+    background-color: rgba(199, 190, 199, 0);
+    color: rgb(236, 237, 241);
+    font-size: 22px;
+    text-align:justify;
+    left: 50%;
+    transform: translate(-50%);
+    box-shadow: 3px 3px 3px #f2f2f2;
+    opacity: 85%;
+    font-size: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: red;
+}
+.fundo1{
+    margin-bottom: 400px;
+}
+
+.fundo1::before{
+ background-image: url(https://www.cleverfiles.com/howto/wp-content/uploads/2018/03/minion.jpg);
+}
+
+
